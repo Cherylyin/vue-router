@@ -1,0 +1,48 @@
+ <!--导航栏-->
+                    <div class="im-nav-bar">
+                        <div class="ui vertical menu inverted">
+                              
+                              <div class="item" v-for="nav in menuArray">
+                                     <div class="menu ">
+									                         <router-link :to="nav.view" class="item"><i v-bind:class="nav.icon"></i> {{nav.title}}</router-link>
+                                           <!--<a v-bind:href="nav.view" class="item"><i v-bind:class="nav.icon"></i> {{nav.title}}</a>-->
+                                     </div>
+                              </div>
+                             
+                        </div>
+
+                    </div>
+
+                    <!-- 
+                       
+                      <div class="item">
+                                     <div class="menu">
+                                           <a href="#" class="item"><i class="home icon"></i> 首页</a>
+                                     </div>
+                              </div>
+
+                              <div class="item">
+                                     <div class="menu">
+                                           <a href="#" class="item"><i class="podcast icon"></i> 实时热点话题</a>
+                                     </div>
+                              </div>
+
+                              <div class="item">
+                                     <div class="menu">
+                                           <a href="#" class="item"><i class="bar chart icon"></i> 领域热度排名</a>  
+                                     </div>
+                              </div>
+
+                              <div class="item">
+                                     <div class="menu">
+                                           <a href="#" class="item"><i class="instagram icon"></i> 焦点安全事件</a>   
+                                     </div>
+                              </div>
+
+                              <div class="item">
+                                     <div class="menu">
+                                           <a href="#" class="item"><i class="line chart icon"></i> 事件性质统计</a>  
+                                     </div>
+                              </div>
+
+                    -->
